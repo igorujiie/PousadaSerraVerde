@@ -1,14 +1,20 @@
  body{
     background-image: url("/Imagens/folhas.png");
+  
     
  }
 
  header {
-    width: 68%;
+    width: 65%;
+    margin: auto;
     height: 180px;
-    background-image: url("/Imagens/paisagem.png");
+    background-image: url("/Imagens/paisagem.png"); 
+    background-position: center; 
+    background-repeat: no-repeat;
     margin: auto;
     padding-top: 12px;
+    text-align: center;
+    color: olive;
     }
     
  
@@ -43,7 +49,6 @@ a:hover, a:active {
       margin: auto;
       background-size: auto;
       padding: 15px;
-      
       text-align: left;
       
   }
@@ -59,44 +64,51 @@ a:hover, a:active {
 
 .img{
     display: block;
-    width: 68%;
+    
     margin: auto;
     padding-top: 8px;
     text-align: center;
-    background-color: #4ba52a;
+  
   }
-.leia{
-
+.principal{
     margin: auto; 
     padding-top: 5px;
+    text-align: left;
     padding-bottom: 5px;
 
   }
 
 
 
-.pousada{
+.menu{
     text-align: center;
     color: rgb(0, rgb(24, 80, 24), 0);
  }
+ 
+.mapa{
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
 section {
-    background-color: #4ba52a;
-    width: 68%;
-    margin: auto;
-    padding-top: 12px;
+  background: linear-gradient(#518351, #acf8ac);;
+  width: 65%;
+  margin: auto;
+  padding-top: 12px;
 
 }
 
 
 .info{
     margin-left: 20px;
+    font-family: 'Comic Sans MS';
 
 }
-    
+
     
 
 footer {
-    width: 68%;
+    width: 65%;
     background: #548B54;
     font-family: "Verdana", serif;
     font-size: 14px; 
@@ -104,4 +116,47 @@ footer {
     margin: auto; 
     padding-top: 5px;
     padding-bottom: 5px;
-    }
+}
+.video{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+h1{
+  font-family: 'Comic Sans MS';
+}
+
+h3{
+  font-family: 'Comic Sans MS';
+  
+}
+
+p{
+  font-family: Comic Sans MS;
+}
+
+.passaro{
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+ul{
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+ol{
+  margin-bottom: 0px;
+}
+
+.textarea{
+  display: block;
+  text-align: center;
+}
+
+.tabela{
+  display: block;
+  text-align: center;
+  padding-left: 250px;
+  padding-bottom: 20px;
+}

@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
-<link href="style.css" type="text/css" rel="stylesheet" >
-
 <head>
-	<title>Home</title>
-	<meta charset="UTF-8">
+    <title>Pousada Serra Verde</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body style="background-color: aquamarine;">
+
+<body>
     <header>
         <h1>Pousada Serra Verde</h1>
+
+
+        <nav>
+            <a href="/home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/APousada.html"> A Pousada</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/reservas.html"> Reservas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/tarifas.html"> Tarifas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/comochegar.html"> Como Chegar</a>
+        </nav>
     </header>
-    
-    <header>
-    <a href="/home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/Pages/APousada.html"> A Pousada</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/Pages/reservas.html"> Reservas</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-    <a href="/Pages/tarifas.html">  Tarifas</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-    <a href="/Pages/comochegar.html"> Como Chegar</a>
-    </header> <hr> 
 
     <section>
-        <h3>A Pousada</h3>
+        <h3 class="principal">A Pousada</h3>
 
-            <p> A Pousada Serra Verde é uma excelente opção em hospedagem para quem quer conhecer as belezas de Campos do Jordão
-                e não abre mão de conforto e ótimos preços. Com excelente localização e fácil acesso, oferece aos seus hóspedes
-                ótimas acomodações para casais, famílias e grupos. Confira nossos principais atrativos e facilidades:</p>
-               
-           <ul>
+        <p class="info"> A Pousada Serra Verde é uma excelente opção em hospedagem para quem quer conhecer as belezas de
+            Campos do Jordão
+            e não abre mão de conforto e ótimos preços. Com excelente localização e fácil acesso, oferece aos seus
+            hóspedes
+            ótimas acomodações para casais, famílias e grupos. Confira nossos principais atrativos e facilidades:</p>
+
+        <ul>
             <li> Cachoeira com piscina natural </li>
             <li> Minicampo de futebol </li>
             <li> Salão de jogos</li>
@@ -38,26 +40,29 @@
             <li>Aluguel de bicicletas </li>
         </ul>
 
-    </section>
+    
 
-    <section>
-        <h4>Veja o que a natureza reservou para nossos hospedes!</h4>
-        <video controls width="600"  >
+    
+        <h4 class="info">Veja o que a natureza reservou para nossos hospedes!</h4>
+        <video controls width="600" class="video">
             <source src="/Mídias/apousada-midias/cachoeira.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento &lt;video&gt;. </video>	<br>
+            Seu navegador não suporta o elemento &lt;video&gt;.
+        </video> <br>
         </video>
 
 
-        <h4>Escute a melodia de nossos pássaros!</h4>
-        <img src="/Mídias/apousada-midias/canario.jpg" alt="Pássaro">
-        <audio controls >
-            <source src="/Mídias/apousada-midias/passaros.mp3" type="audio/mpeg">
-            Seu navegador não suporta o elemento &lt;audio&gt;.
-        </audio>
+        <h4 class="info">Escute a melodia de nossos pássaros!</h4>
+        <div class="passaro">
+            <img src="/Mídias/apousada-midias/canario.jpg" alt="Pássaro">
+            <audio controls>
+                <source src="/Mídias/apousada-midias/passaros.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento &lt;audio&gt;.
+            </audio>
+        </div>
     </section>
-     
 
-    
-    
+    <footer> Desenvolvido por Tech Hotelaria</footer>
+
 </body>
+
 </html>

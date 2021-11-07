@@ -1,162 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Pousada Serra Verde</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <header>
         <h1>Pousada Serra Verde</h1>
+
+
+        <nav>
+            <a href="/home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/APousada.html"> A Pousada</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/reservas.html"> Reservas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/tarifas.html"> Tarifas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Pages/comochegar.html"> Como Chegar</a>
+        </nav>
     </header>
-    
-    <header>
-        <a href="/home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/Pages/APousada.html"> A Pousada</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/Pages/reservas.html"> Reservas</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="/Pages/tarifas.html">  Tarifas</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-        <a href="/Pages/comochegar.html"> Como Chegar</a>
-    </header> <hr> 
 
 
-    <section>
-        <h3> Reservas</h3>
+    <section class="principal">
+        <h3 class="info"> Reservas</h3>
 
-            <p>Você pode efetuar sua reserva pelo telefone (12)4321-1234, ou pelo nosso site, seguindo os passo abaixo:</p>
-            <ol>
-                <li> Preencha o formulário a seguir. </li>
-                <li> Aguarde nosso contato telefônico, ou por e-mail, para confirmação da reserva</li>
-                <li>Efetue a transferência do valor da reserva </li>
-                <li>Envie o comprovante de transferência para o e-mail <a href="malito:atendimento@pousadaserraverde.tur.br">atendimento@pousadaserraverde.tur.br</a> </li>
-                </ol>
-    </section>
-    <style>div,form{padding: 5px;}</style>
-    <section>
-        <h3>Faça sua reserva agora na Pousada Serra Verde:</h3>
+        <p class="info">Você pode efetuar sua reserva pelo telefone (12)4321-1234, ou pelo nosso site, seguindo os passo
+            abaixo:</p>
+        <ol>
+            <li> Preencha o formulário a seguir. </li>
+            <li> Aguarde nosso contato telefônico, ou por e-mail, para confirmação da reserva</li>
+            <li>Efetue a transferência do valor da reserva </li>
+            <li>Envie o comprovante de transferência para o e-mail <a
+                    href="malito:atendimento@pousadaserraverde.tur.br">atendimento@pousadaserraverde.tur.br</a> </li>
+        </ol>
+
+        <style>
+            div,
+            form {
+                padding: 5px;
+            }
+        </style>
+
+        <h3 class="info">Faça sua reserva agora na Pousada Serra Verde:</h3>
         <form>
             <fieldset>
-            <legend>Solicitação de Reserva </legend>
-            <p>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-            </p>
-        <div>
-        <label for="idade">Idade</label>
-            <input type="range" id="idade" value="18" min="18" max="100" >
-            <output id="saída" for="idade" ></output> anos
-        </div>
-            <p>
-                <label for="celular">Celular</label>
-                <input type="telefone" id="celular" name="celular" placeholder="11 11223-1122" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
-            </p>
-            <p>
-                <label for="mail">E-mail</label>
-                <input type="email" id="mail" name="mail">
-                <abbr title="required">*</abbr>
-            </p>
-            <p>
-                <label for="cidade"> Cidade</label>
-                <input type="adress" id="cidade" name="cidade">
+                <legend>Solicitação de Reserva </legend>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </p>
+                <div>
+                    <label for="idade">Idade</label>
+                    <input type="range" id="idade" value="18" min="18" max="100">
+                    <output id="saída" for="idade"></output> anos
+                </div>
+                <p>
+                    <label for="celular">Celular</label>
+                    <input type="telefone" id="celular" name="celular" placeholder="11 11223-1122"
+                        pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+                </p>
+                <p>
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" name="mail">
+                    <abbr title="required">*</abbr>
+                </p>
+                <p>
+                    <label for="cidade"> Cidade</label>
+                    <input type="adress" id="cidade" name="cidade">
                     <label for="estado"> UF:</label>
-                        <select name="estado" id="estado">
-                            <option value="acre"> Acre </option>
-                            <option value="alagoas"> Alagoas </option>
-                            <option value="amapa"> Amapá </option>
-                            <option value="amazonas"> Amazonas </option>
-                            <option value="bahia"> Bahia </option>
-                            <option value="ceara"> Ceará </option>
-                            <option value="distrito federal"> Distrito Federal </option>
-                            <option value="espirito santo"> Espírito Santo </option>
-                            <option value="goias"> Goiás </option>
-                            <option value="maranhão"> Maranhão </option>
-                            <option value="mato grosso"> Mato Grosso </option>
-                            <option value="mato grosso do sul"> Mato Grosso do Sul </option>
-                            <option value="minas gerais"> Minas Gerais </option>
-                            <option value="para"> Pará </option>
-                            <option value="paraiba"> Paraíba </option>
-                            <option value="parana"> Paraná </option>
-                            <option value="pernambuco"> Pernambuco </option>
-                            <option value="piaui"> Piaui </option>
-                            <option value="rio de janeiro"> Rio de Janeiro </option>
-                            <option value="rio grande do norte"> Rio Grande do Norte </option>
-                            <option value="rio grande do sul"> Rio Grande do Sul </option>
-                            <option value="rondonia"> Rondônia </option>
-                            <option value="roraima"> Roraima </option>
-                            <option value="santa catarina"> Santa Catarina </option>
-                            <option value="sao paulo"> São Paulo </option>
-                            <option value="sergipe"> Sergipe </option>
-                            <option value="tocantins"> Tocantins </option>
-                        </select>
-            </p>
-            
-            <p>
+                    <select name="estado" id="estado">
+                        <option value="acre"> Acre </option>
+                        <option value="alagoas"> Alagoas </option>
+                        <option value="amapa"> Amapá </option>
+                        <option value="amazonas"> Amazonas </option>
+                        <option value="bahia"> Bahia </option>
+                        <option value="ceara"> Ceará </option>
+                        <option value="distrito federal"> Distrito Federal </option>
+                        <option value="espirito santo"> Espírito Santo </option>
+                        <option value="goias"> Goiás </option>
+                        <option value="maranhão"> Maranhão </option>
+                        <option value="mato grosso"> Mato Grosso </option>
+                        <option value="mato grosso do sul"> Mato Grosso do Sul </option>
+                        <option value="minas gerais"> Minas Gerais </option>
+                        <option value="para"> Pará </option>
+                        <option value="paraiba"> Paraíba </option>
+                        <option value="parana"> Paraná </option>
+                        <option value="pernambuco"> Pernambuco </option>
+                        <option value="piaui"> Piaui </option>
+                        <option value="rio de janeiro"> Rio de Janeiro </option>
+                        <option value="rio grande do norte"> Rio Grande do Norte </option>
+                        <option value="rio grande do sul"> Rio Grande do Sul </option>
+                        <option value="rondonia"> Rondônia </option>
+                        <option value="roraima"> Roraima </option>
+                        <option value="santa catarina"> Santa Catarina </option>
+                        <option value="sao paulo"> São Paulo </option>
+                        <option value="sergipe"> Sergipe </option>
+                        <option value="tocantins"> Tocantins </option>
+                    </select>
+                </p>
+
+                <p>
                 <fieldset>
-        <legend>Chalé</legend>
-            <p>
-                <input type="radio" name="tipo" id="tipo_1" value="econômico" />
-                    <label for="tipo_1">Econômico</label>
-        
-                <input type="radio" name="tipo" id="tipo_2" value="standart" />
-                    <label for="tipo_2">Standart</label>
-      
-                <input type="radio" name="tipo" id="tipo_3" value="luxo" />
-                    <label for="tipo_3">Luxo</label>
-        
-                <input type="radio" name="tipo" id="tipo_4" value="familia" />
-                    <label for="tipo_4">Família</label>
-       
+                    <legend>Chalé</legend>
+                    <p>
+                        <input type="radio" name="tipo" id="tipo_1" value="econômico" />
+                        <label for="tipo_1">Econômico</label>
+
+                        <input type="radio" name="tipo" id="tipo_2" value="standart" />
+                        <label for="tipo_2">Standart</label>
+
+                        <input type="radio" name="tipo" id="tipo_3" value="luxo" />
+                        <label for="tipo_3">Luxo</label>
+
+                        <input type="radio" name="tipo" id="tipo_4" value="familia" />
+                        <label for="tipo_4">Família</label>
+
                 </fieldset>
-            </p>
-            <p>
-                <label for="datachegada"> Chegada </label>
-                <input type="date" id="datachegada" name="datachegada">
+                </p>
+                <p>
+                    <label for="datachegada"> Chegada </label>
+                    <input type="date" id="datachegada" name="datachegada">
                 </p>
                 <label for="datapartida"> Partida </label>
                 <input type="date" id="datapartida" name="datapartida">
-            
-            
-            <p>
-                <label for="idade">Adultos</label>
-                <input type="number" id="idade" name="idade">
-            </p>
-            <p>
-                <label for="idademin">Crianças</label>
-                <input type="number" id="idademin" name="idademin">
-    
-                <label for="idademax">Até 5 anos</label>
-                <input type="number" id="idademax" name="idademax">
-            </p>
-            <div>
-                <input type="checkbox" id="estacionamento" name="estacionamento" value="estacionamento">
-                <label for="estacionamento">Quero reservar uma vaga no estacionamento</label>
-            </div>
-            <p>
-                <label for="tipopagamento"> Forma de Pagamento:</label>
-                        <select name="tipopagamento" id="tipopagamento">
-                            <option value="transferencia"> Transferência (TED/DOC)</option>
-                            <option value="pix"> Pix </option>
-                            <option value="dinheiro"> Dinheiro </option>
-                            <optgroup label="Cartão">
-                                <option value="mastercard"> Mastercard </option>
-                                <option value="visa"> Visa </option>
-                                <option value="elo"> Elo </option>
-                            </optgroup>
-                        </select>	
-            </p>
-            <p>
-            Se desejar, faça um pedido especial, faremos o possível para atendê-lo:
-            <label for="obs"></label>
-                <textarea id="obs" rows="3" cols="50" maxlength="185"> </textarea>
-            </p>
-            <div>		
-            <input type="submit" value="Solicitar Reserva"
-            onclick="alert('Obrigado! Em breve, entraremos em contato para confirmação de sua reserva.')">
-            </div>
-    
-      
-                
-                
+
+
+                <p>
+                    <label for="idade">Adultos</label>
+                    <input type="number" id="idade" name="idade">
+                </p>
+                <p>
+                    <label for="idademin">Crianças</label>
+                    <input type="number" id="idademin" name="idademin">
+
+                    <label for="idademax">Até 5 anos</label>
+                    <input type="number" id="idademax" name="idademax">
+                </p>
+                <div>
+                    <input type="checkbox" id="estacionamento" name="estacionamento" value="estacionamento">
+                    <label for="estacionamento">Quero reservar uma vaga no estacionamento</label>
+                </div>
+                <p>
+                    <label for="tipopagamento"> Forma de Pagamento:</label>
+                    <select name="tipopagamento" id="tipopagamento">
+                        <option value="transferencia"> Transferência (TED/DOC)</option>
+                        <option value="pix"> Pix </option>
+                        <option value="dinheiro"> Dinheiro </option>
+                        <optgroup label="Cartão">
+                            <option value="mastercard"> Mastercard </option>
+                            <option value="visa"> Visa </option>
+                            <option value="elo"> Elo </option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    Se desejar, faça um pedido especial, faremos o possível para atendê-lo:
+                    <label for="obs"></label>
+                    <textarea class="textarea" id="obs" rows="3" cols="50" maxlength="185"> </textarea>
+                </p>
+                <div>
+                    <input type="submit" value="Solicitar Reserva"
+                        onclick="alert('Obrigado! Em breve, entraremos em contato para confirmação de sua reserva.')">
+                </div>
+
+
+
+
         </form>
     </section>
 
+    <footer>
+        Desenvolvido por Tech Hotelaria
+    </footer>
 </body>
+
 </html>
