@@ -63,8 +63,8 @@ a:hover, a:active {
   }
 
 .img{
-    display: block;
-    
+    display: flex;
+    justify-content: ce;
     margin: auto;
     padding-top: 8px;
     text-align: center;
