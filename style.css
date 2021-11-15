@@ -1,89 +1,86 @@
  body{
     background-image: url("/Imagens/folhas.png");
+    background-attachment: fixed;
+		margin: 15px;
+		padding:0;
   
     
  }
 
  header {
-    width: 65%;
-    margin: auto;
-    height: 180px;
+   
     background-image: url("/Imagens/paisagem.png"); 
-    background-position: center; 
-    background-repeat: no-repeat;
+    width: 65%;
+    height: 180px;
     margin: auto;
-    padding-top: 12px;
-    text-align: center;
-    color: olive;
-    }
+    line-height: 140%;
+    padding: 5px 20px 15px;
+  }
     
  
 
 nav{
-    font-size: 50px;
+    font-size: 18px;
     text-align: center;
     margin: auto;
     padding-top: 15px;
 }
 
- a:link, a:visited {
-    background-color: white;
-    color: DarkOliveGreen;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-style: solid;
-    border-width: 2px;
-    border-color:DarkOliveGreen;
-    border-radius:7px;
-    font-size:40%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 25px;
-    padding-right: 25px;
+a{
+  font-family: 'Comic Sans MS';
+  text-decoration: none;
   }
-a:hover, a:active {
-    background-color: DarkKhaki;
-  }
+
+/**abaixo esta um exemplo de seletor de pseudoclasse**/
+a:active {
+  color: rgb(110, 65, 236);
+}
+
+/**abaixo esta um exemplo de seletor de pseudoclasse**/
+.menu:hover {
+  background-color: DarkKhaki;
+}
+
+
 .conteudo{
-      margin: auto;
-      background-size: auto;
-      padding: 15px;
-      text-align: left;
-      
-  }
+  margin: auto;
+  background-size: auto;
+  padding: 15px;
+  text-align: left;  
+}
 
 .imagem-home{
-    padding-left: 12px;
-    padding: right 12px;
-    margin: auto;
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 20px 5px;
   }
 
-.img{
-    display: flex;
-    justify-content: ce;
-    margin: auto;
-    padding-top: 8px;
-    text-align: center;
-  
+.img{ 
+  display: flex; 
+  justify-content: center;
+
   }
 .principal{
-    margin: auto; 
-    padding-top: 5px;
-    text-align: left;
-    padding-bottom: 5px;
-
+  margin: auto; 
+  text-align: left;
+  line-height: 140%;
+  padding: 5px 20px 15px;
   }
 
-
-
 .menu{
-    text-align: center;
-    color: rgb(0, rgb(24, 80, 24), 0);
- }
+  background-color: white;
+  color: DarkOliveGreen;
+  width: 15%;
+  height:28px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-color:DarkOliveGreen;
+  border-radius:12px;
+  padding-bottom: 5px;
+}
+
+/**abaixo está um exemplo de especificação, pois esses valores são usados apenas para os links dentro da classe menu**/
+.link-menu {
+  color: DarkOliveGreen;}
  
 .mapa{
   display: block;
@@ -105,25 +102,69 @@ section {
 
 }
 
-    
+
+	/**o tipo collapse é um exemplo de generalização, pois vale para todos os itens dentro da tabela**/
+	table {
+		background-color: white;
+		border: solid thin;
+		border-collapse:collapse;
+		margin: auto;
+	}
+	
+	th{
+		background-color: #548B54;
+		border: solid thin;
+		padding:3px;
+	}
+	
+	td {
+	background-color: white;
+	border: solid thin;
+	padding: 3px;
+	}
+
+ 
+  /*Seletor adjascente  */
+footer p{
+  width: 65%;
+  background: #548B54;
+  font-family: "Verdana", serif;
+  font-size: 14px; 
+  text-align: center; 
+  margin: auto; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+}
 
 footer {
-    width: 65%;
-    background: #548B54;
-    font-family: "Verdana", serif;
-    font-size: 14px; 
-    text-align: center; 
-    margin: auto; 
-    padding-top: 5px;
-    padding-bottom: 5px;
+width: 65%;
+background: #548B54;
+margin: auto; 
+padding-left: 40px;
+
 }
+/* Seletor descendente */
+ul li{
+  font-weight: 300;
+
+}
+
 .video{
-    display: block;
-    text-align: center;
-    margin: auto;
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 h1{
   font-family: 'Comic Sans MS';
+  color: DarkOliveGreen;
+  
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  font-size: 50px;
+  
 }
 
 h3{
@@ -135,6 +176,11 @@ p{
   font-family: Comic Sans MS;
 }
 
+/* Pseudo elemento com seletor adjascente */
+summary +p::first-letter{
+  font-weight: bold;
+}
+
 .passaro{
   display: block;
   text-align: center;
@@ -144,19 +190,21 @@ ul{
   padding-bottom: 20px;
   margin-bottom: 0px;
 }
+/* Pseudoelemento */
+li::marker{
+  color: rgb(226, 161, 21);
+}
 
 ol{
   margin-bottom: 0px;
 }
+
 
 .textarea{
   display: block;
   text-align: center;
 }
 
-.tabela{
-  display: block;
-  text-align: center;
-  padding-left: 250px;
-  padding-bottom: 20px;
+#email {
+  font-size: 15px;
 }
